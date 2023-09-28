@@ -1,0 +1,31 @@
+java.lang.RuntimeException: Fatal error, could not spawn Bloop: failed to parse output: 'bloop v1.5.9-sc-1
+
+Using Scala v2.12.18 and Zinc v1.9.2
+Running on Java JDK v18.0.2-ea (/usr/lib/jvm/java-18-openjdk-amd64)
+  -> Supports debugging user code, Java Debug Interface (JDI) is available.
+Maintained by the Scala Center and the community.
+'
+  bloop.rifle.BloopServer$.$anonfun$ensureBloopRunning$9(BloopServer.scala:115)
+  scala.util.Either.fold(Either.scala:190)
+  bloop.rifle.BloopServer$.ensureBloopRunning(BloopServer.scala:116)
+  bloop.rifle.BloopServer$.bsp(BloopServer.scala:157)
+  bloop.rifle.BloopServer$.buildServer(BloopServer.scala:187)
+  scala.build.bsp.BspImpl.$anonfun$10(BspImpl.scala:423)
+  scala.build.compiler.BloopCompiler.<init>(BloopCompiler.scala:15)
+  scala.build.bsp.BspImpl.newBloopSession(BspImpl.scala:428)
+  scala.build.bsp.BspImpl.run(BspImpl.scala:470)
+  scala.cli.commands.bsp.Bsp$.runCommand$$anonfun$1(Bsp.scala:96)
+  scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+  scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+  scala.build.bsp.BspThreads$.withThreads(BspThreads.scala:23)
+  scala.cli.commands.bsp.Bsp$.runCommand(Bsp.scala:99)
+  scala.cli.commands.bsp.Bsp$.runCommand(Bsp.scala:35)
+  scala.cli.commands.ScalaCommand.run(ScalaCommand.scala:364)
+  scala.cli.commands.ScalaCommand.run(ScalaCommand.scala:348)
+  caseapp.core.app.CaseApp.main(CaseApp.scala:150)
+  scala.cli.commands.ScalaCommand.main(ScalaCommand.scala:333)
+  caseapp.core.app.CommandsEntryPoint.main(CommandsEntryPoint.scala:120)
+  scala.cli.ScalaCliCommands.main(ScalaCliCommands.scala:125)
+  scala.cli.ScalaCli$.main0(ScalaCli.scala:245)
+  scala.cli.ScalaCli$.main(ScalaCli.scala:108)
+  scala.cli.ScalaCli.main(ScalaCli.scala)

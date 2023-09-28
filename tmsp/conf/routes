@@ -1,0 +1,13 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+GET     /                   controllers.HomeController.index
+GET     /api/ping           controllers.HomeController.ping
+
+GET     /api/movies         controllers.MovieController.listMovies
+POST    /api/movies         controllers.MovieController.createMovie
+GET     /api/movies/:id     controllers.MovieController.readMovie(id: Int)
+PUT     /api/movies/:id     controllers.MovieController.updateMovie(id: Int)
+DELETE  /api/movies/:id     controllers.MovieController.deleteMovie(id: Int)
